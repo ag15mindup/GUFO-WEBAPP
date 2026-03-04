@@ -15,8 +15,7 @@ Ideas for contributions:
 - Merchant integrations
 - Reward logic
 - API endpoint
-## System Architecture
-
+## System Architecture 
 ```mermaid
 graph TD
 
@@ -37,4 +36,3 @@ Membership --> Diamond
 Membership --> Elite
 Membership --> Millionaire
 ```
-

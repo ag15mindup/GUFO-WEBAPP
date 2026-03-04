@@ -25,9 +25,21 @@ Wallet --> Transactions
 Transactions --> Rewards
 Rewards --> Membership
 
+## Membership Levels
+
+```mermaid
+graph TD
+
+Membership --> Basic
 Membership --> Bronze
 Membership --> Silver
 Membership --> Gold
+Membership --> Platinum
+Membership --> VIP
+Membership --> Diamond
+Membership --> Elite
+Membership --> Millionaire
+```
 
 Transactions --> SupabaseDB
 Wallet --> SupabaseDB

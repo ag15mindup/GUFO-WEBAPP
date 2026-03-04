@@ -15,3 +15,24 @@ Ideas for contributions:
 - Merchant integrations
 - Reward logic
 - API endpoints
+## System Architecture
+
+```mermaid
+graph TD
+
+User --> Wallet
+Wallet --> Transactions
+Transactions --> Rewards
+Rewards --> Membership
+
+Membership --> Bronze
+Membership --> Silver
+Membership --> Gold
+
+Transactions --> SupabaseDB
+Wallet --> SupabaseDB
+User --> SupabaseDB
+
+SupabaseDB --> BackendAPI
+BackendAPI --> PartnerBusinesses
+```

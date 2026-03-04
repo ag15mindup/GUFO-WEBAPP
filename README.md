@@ -14,7 +14,7 @@ Ideas for contributions:
 - Wallet improvements
 - Merchant integrations
 - Reward logic
-- API endpoints
+- API endpoint
 ## System Architecture
 
 ```mermaid
@@ -22,13 +22,10 @@ graph TD
 
 User --> Wallet
 Wallet --> Transactions
-Transactions --> Rewards
+Transactions --> Cashback
+Cashback --> Rewards
 Rewards --> Membership
-
-## Membership Levels
-
-```mermaid
-graph TD
+Membership --> Benefits
 
 Membership --> Basic
 Membership --> Bronze
@@ -41,10 +38,3 @@ Membership --> Elite
 Membership --> Millionaire
 ```
 
-Transactions --> SupabaseDB
-Wallet --> SupabaseDB
-User --> SupabaseDB
-
-SupabaseDB --> BackendAPI
-BackendAPI --> PartnerBusinesses
-```
